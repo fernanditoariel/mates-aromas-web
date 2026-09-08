@@ -125,10 +125,10 @@ strong{font-weight:700}
 .chip{display:inline-flex;align-items:center;gap:.4rem;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-pill);padding:.4rem .85rem;font-size:.86rem;font-weight:600;color:var(--ink-soft)}
 .chip i{color:var(--teal-deep);font-size:1.05em}
 
-/* hero visual: logo sobre panel salvia + destellos dorados */
-.hero__visual{position:relative;justify-self:center;width:min(100%,420px);aspect-ratio:1;display:grid;place-items:center}
-.hero__disc{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 32% 28%,#5AA593,var(--teal) 55%,var(--teal-deep));box-shadow:var(--shadow)}
-.hero__logo{position:relative;width:74%;height:74%;border-radius:50%;object-fit:cover;border:6px solid var(--cream)}
+/* hero visual: medallón del logo con aro salvia + destellos dorados */
+.hero__visual{position:relative;justify-self:center;width:min(100%,400px);aspect-ratio:1;display:grid;place-items:center}
+.hero__disc{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 34% 30%,#54A18F,var(--teal) 62%,var(--teal-deep))}
+.hero__logo{position:relative;width:87%;height:87%;border-radius:50%;object-fit:cover;object-position:50% 46%;border:5px solid var(--cream);box-shadow:0 20px 44px -20px rgba(46,35,20,.4)}
 .spark{position:absolute;color:var(--gold);font-size:1.7rem;line-height:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,.15))}
 .spark:nth-child(3){top:6%;left:14%;font-size:2.1rem}
 .spark:nth-child(4){top:20%;right:6%}

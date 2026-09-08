@@ -38,19 +38,20 @@ vercel.json                  headers de caché (img/video = immutable; css/js/ht
 
 ## Pendiente: fotos reales de producto
 
-La sección **Qué vendemos** tiene 12 tarjetas. Hoy cada una muestra un ícono sobre
-un panel de color de marca. Para poner una foto real, dentro del `<div class="cat__media">`
-de esa tarjeta agregar una `<img>` (queda por encima del ícono, tapándolo):
+La sección **Qué vendemos** tiene 12 tarjetas. Hoy cada una muestra una **foto de
+stock gratis (Unsplash)** en `assets/img/prod-<rubro>.jpg`, con un ajuste cálido
+parejo por CSS para que el set se vea coherente. **Son provisorias**: cuando Ali
+mande fotos reales de sus productos, reemplazar el archivo con el mismo nombre
+(JPG, ~820×615 px, 4:3) y listo — el `<i>` que queda detrás es solo un fallback.
 
 ```html
 <div class="cat__media">
-  <img src="assets/img/prod-mates.jpg" alt="Mates de Mates, Aromas y Bla Bla Bla" />
+  <img src="assets/img/prod-mates.jpg" alt="Mates" loading="lazy" width="820" height="615" />
   <i class="ph-fill ph-coffee" aria-hidden="true"></i>
 </div>
 ```
 
-Fotos sugeridas (formato JPG, ~800×600 px, calidad ~80, optimizar con
-`sips -Z 800 -s formatOptions 80`):
+Qué conviene que muestre cada foto real cuando lleguen (JPG, ~820×615, 4:3):
 
 | Tarjeta | Archivo | Qué mostrar |
 |---|---|---|

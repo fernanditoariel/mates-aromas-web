@@ -52,18 +52,19 @@
     window.addEventListener("resize", function () { if (window.innerWidth > 760) close(); });
   }
 
-  /* video del local: click para reproducir con sonido */
-  var reel = document.getElementById("reel");
-  var play = document.getElementById("reelPlay");
-  if (reel && play) {
-    play.addEventListener("click", function () {
-      reel.muted = false;
-      reel.play();
-      play.hidden = true;
+  /* videos (local + novedades): click para reproducir con sonido, uno por vez */
+  var vids = document.querySelectorAll("video[poster]");
+  vids.forEach(function (v) {
+    var btn = v.parentElement.querySelector("button");
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      vids.forEach(function (o) { if (o !== v) { o.pause(); } });
+      v.muted = false;
+      v.play();
+      btn.hidden = true;
     });
-    reel.addEventListener("pause", function () { if (!reel.ended) play.hidden = false; });
-    reel.addEventListener("click", function () {
-      if (!reel.paused) { reel.pause(); }
-    });
-  }
+    v.addEventListener("pause", function () { if (!v.ended) btn.hidden = false; });
+    v.addEventListener("play", function () { btn.hidden = true; });
+    v.addEventListener("click", function () { if (!v.paused) v.pause(); });
+  });
 })();

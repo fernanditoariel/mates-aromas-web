@@ -2,3 +2,6 @@
 node_modules/
 .vercel
 .playwright-mcp/
+
+# reels: se versiona solo la versión web; los originales quedan fuera
+assets/video/*-original.mp4

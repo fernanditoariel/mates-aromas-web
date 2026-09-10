@@ -62,7 +62,6 @@ Qué conviene que muestre cada foto real cuando lleguen (JPG, ~820×615, 4:3):
 | Lámparas de sal | `prod-lamparas-sal.jpg` | lámpara de sal encendida |
 | Tazas | `prod-tazas.jpg` | tazas / jarros con diseños |
 | Regalos | `prod-regalos.jpg` | armado de regalo / caja |
-| Artesanías | `prod-artesanias.jpg` | piezas de cuero / madera / cerámica |
 | Termos | `prod-termos.jpg` | termos de varias marcas |
 | Marroquinería | `prod-marroquineria.jpg` | carteras / mochilas |
 | Sahumerios | `prod-sahumerios.jpg` | sahumerios y portasahumerios |
